@@ -12,7 +12,10 @@ Por ejemplo:
 
 > **Media**: Es una medida de tendencia centrada. Como norma se le
 > considera como media a la media aritmetica la cual es el promedio
-> estandar (*promedio*) definido como: [!imagen](Dependencias/media.svg)
+> estandar (*promedio*) definido como: 
+> 
+> ![imagen](Dependencias/media.svg) 
+> 
 > La media se usa en estadística para dos conceptos diferentes aunque
 > numéricamente similares:
 
