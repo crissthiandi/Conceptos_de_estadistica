@@ -278,20 +278,25 @@ div.tocify {
 </div>
 
 
-<div id="definiciones" class="section level1">
-<h1>Definiciones</h1>
+<style type="text/css">
+p {
+    font-size: 18px;
+}
+</style>
+<div id="variable-definiciones" class="section level2">
+<h2>Variable Definiciones</h2>
 <p>A continuación, se definen conceptos usados en estadística. (Saldívar, 2008)</p>
 <blockquote>
-<p><strong>Variable</strong>: Una variable puede ser cualquier cosa que se quiera estudiar y representar por un símbolo, tal como X, Y, H, x, b, y puede tomar un valor cualquiera de un conjunto determinado de ellos. Una variable es algo cuya magnitud puede cambiar, es decir, algo que puede tomar diferentes valores. Las variables que con frecuencia se utilizan en economía representan precios, beneficios, ingreso, costos, consumo, inversión, importaciones, exportaciones, etc. Puesto que cada variable puede asumir distintos valores, debe estar representada por un símbolo o una letra, por ejemplo Precio = P, Beneficio = II, Ingreso = Y, y así sucesivamente.</p>
+<p><strong>Variable</strong>: Una variable puede ser cualquier cosa que se quiera estudiar y representar por un símbolo, tal como <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, <span class="math inline">\(H\)</span>, <span class="math inline">\(x\)</span> y <span class="math inline">\(b\)</span> pueden tomar un valor cualquiera de un conjunto determinado de ellos si son variables. Una variable es algo cuya magnitud puede cambiar, es decir, algo que puede tomar diferentes valores. Las variables que con frecuencia se utilizan en economía representan precios, beneficios, ingreso, costos, consumo, inversión, importaciones, exportaciones, etc. Puesto que cada variable puede asumir distintos valores, deben estar representadas por un símbolo o letra, por ejemplo Precio = P, Beneficio = B, Ingreso = Y, y así sucesivamente.</p>
 </blockquote>
 <blockquote>
 <p><strong>Variable aleatoria</strong>: Si los valores numéricos que toma una variable provienen de factores fortuitos y si un determinado valor no se puede predecir exactamente con anticipación, esa variable se denomina aleatoria.</p>
 </blockquote>
 <blockquote>
-<p><strong>Variable aleatoria discreta</strong>: Cuando los valores que puede tomar una variable están separados entre sí por una determinada cantidad, la variable se denomina discreta. Una característica de las variables discretas es la presencia de “vacíos” o “interrupciones” entre los valores que puede tomar. Por ejemplo, la cantidad de alumnos en un salón de clase (es decir, no se puede tener 15.2, 17.4 o 25.3 alumnos, siempre tiene que ser un número entero). Esto quiere decir que las variables discretas casi siempre se refieren a valores enteros.</p>
+<p><strong>Variable aleatoria discreta</strong>: Cuando los valores que puede tomar una variable están separados entre sí por una determinada cantidad, la variable se denomina discreta. Una característica de las variables discretas es la presencia de “vacíos” o “interrupciones” entre los valores que puede tomar. Por ejemplo, la cantidad de alumnos en un salón de clase (no se puede tener 15.2, 17.4 o 25.3 alumnos, siempre tiene que ser un número entero). Esto quiere decir que las variables discretas casi siempre se refieren a valores contables.</p>
 </blockquote>
 <blockquote>
-<p><strong>Variable aleatoria continua</strong>: Una variable continua es aquella que teóricamente puede tomar cualquier valor dentro de un intervalo de valores. Otra forma de explicar sería decir que, sin importar qué tan cerca pueden estar dos valores para tomar una variable, siempre es posible, teóricamente, hallar otro valor de la variable que se pueda colocar entre ellos. Un ejemplo sería las estaturas de dos personas, en este caso es posible, teóricamente, encontrar a otra persona de la cual su estatura se encuentre entre las dos anteriores.</p>
+<p><strong>Variable aleatoria continua</strong>: Una variable continua es aquella que teóricamente puede tomar cualquier valor dentro de un intervalo de valores. Otra forma de explicarlo sería decir que, sin importar qué tan cerca pueden estar dos valorese, siempre es posible (teóricamente), hallar otro valor de la variable que se pueda colocar entre ellos. Un ejemplo sería las estaturas de dos personas, en este caso es posible, teóricamente, encontrar a otra persona de la cual su estatura se encuentre entre las dos anteriores.</p>
 </blockquote>
 <blockquote>
 <p><strong>Variable cuantitativa</strong>: Tanto los datos discretos como continuos se conocen como cuantitativos, ya que son inherentemente numéricos, es decir, ciertos valores numéricos se relacionan, de manera natural, con las variables que se miden. Se dice que una variable es cuantitativa siempre y cuando los valores que puede asumir sean los resultados de medidas numéricas. Ejemplos, la estatura, el peso, la temperatura, etcétera.</p>
@@ -299,9 +304,9 @@ div.tocify {
 <blockquote>
 <p><strong>Variable cualitativa</strong>: Hay muchos casos en donde no es posible hacer medidas numéricas. Muchas variables son susceptibles solamente de clasificación, por ejemplo, la variable “estado civil” puede recibir los valores de soltero, casado, divorciado, viudo y, tal vez, todos los demás. También se pueden asumir valores de orden como primero, segundo, tercero, etcétera.</p>
 </blockquote>
-<div id="ejemplificando-lo-anterior" class="section level2">
-<h2>Ejemplificando lo anterior</h2>
-<p>Como dato tenemos que la misma población puede dar origen a diferentes tipos de datos o clasificación de variables.</p>
+<div id="ejemplos" class="section level3">
+<h3>Ejemplos</h3>
+<p>Hay que recordar que la misma población puede dar origen a diferentes tipos de clasificación de variables. La tabla siguiente muestra por cada población variables de cada tipo.</p>
 <table>
 <thead>
 <tr class="header">
@@ -317,7 +322,7 @@ div.tocify {
 <td>Alumnos</td>
 <td>Pesos/Tamaños</td>
 <td>Num. de alumnos</td>
-<td>niños/niñas</td>
+<td>ratio niños/niñas</td>
 <td>Genero</td>
 </tr>
 <tr class="even">
@@ -325,27 +330,30 @@ div.tocify {
 <td>Kilometraje</td>
 <td>Num. autos</td>
 <td>Num. Colores usados</td>
-<td>belleza</td>
+<td>Belleza</td>
 </tr>
 <tr class="odd">
 <td>Perros</td>
 <td>Peso</td>
 <td>Num. de cabezas</td>
 <td>Hembras</td>
-<td>lindura</td>
+<td>Lindura</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="poblaciones-definición" class="section level2">
+<h2>Poblaciones Definición</h2>
 <blockquote>
 <p><strong>Población</strong>: Es la totalidad de los elementos que conforman el universo de estudio. Es el conjunto de valores de una variable por el cual existe algún interés. Por ejemplo, si nos interesa la cantidad de alumnos que reprueban matemáticas en la ESE, la población son todos los alumnos de la ESE. Si nos interesa estudiar todos los automóviles nuevos que no tienen verificación, la población son todos los automóviles nuevos. Cabe agregar que las poblaciones pueden ser finitas o infinitas: por ejemplo, la población consistente en todos los carros producidos en una fábrica en un día es finita, mientras que la población formada por todos los posibles sucesos “cara o cruz” en tiradas sucesivas de una moneda es infinita</p>
 </blockquote>
 <blockquote>
 <p><strong>Muestra</strong>: Es una parte de una población. El tamaño completo de una población aun siendo finita, puede ser demasiado grande o también a veces no se puede estudiar toda, por cuestiones de costos y recursos. Por eso es necesario o conveniente examinar sólo una fracción (muestra) de la población. Una muestra nos permite obtener información de una población a partir de la información que se deduce de la misma.</p>
 </blockquote>
-</div>
-<div id="detalles" class="section level2">
-<h2>Detalles</h2>
-<p>Es conveniente mencionar que, en estadística, es muy importante diferenciar entre indicadores estadísticos de una muestra y de una población. Los estadísticos emplean letras latinas minúsculas para denotar estadísticas producto de una muestra; y letras griegas o latinas mayúsculas para representar parámetros de población.</p>
+<div id="detalles" class="section level3">
+<h3>Detalles</h3>
+<p>Es conveniente mencionar que en estadística es muy importante diferenciar entre indicadores estadísticos de una muestra y de una población. Los estadísticos emplean letras latinas minúsculas para denotar estadísticas producto de una muestra; y letras griegas o latinas mayúsculas para representar parámetros de población.</p>
 <table>
 <colgroup>
 <col width="9%" />
@@ -354,7 +362,7 @@ div.tocify {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Caracteristicas</th>
+<th>Características</th>
 <th>Población</th>
 <th>Muestra</th>
 </tr>
@@ -363,27 +371,27 @@ div.tocify {
 <tr class="odd">
 <td>Definición</td>
 <td>Total de elementos considerados</td>
-<td>Parte o proporcion de la población seleccionada para estudiar</td>
+<td>Parte o proporción de la población seleccionada para estudiar</td>
 </tr>
 <tr class="even">
 <td>Características</td>
-<td>“Parametros”</td>
-<td>“Estadisticos”</td>
+<td>“Parámetros”</td>
+<td>“Estadísticos”</td>
 </tr>
 <tr class="odd">
 <td>Letras</td>
-<td>Tamaño de la población= <span class="math inline">\(N\)</span> Media de población= <span class="math inline">\(\mu\)</span> Varianza=<span class="math inline">\(\sigma^2\)</span> Desviación de estandar= <span class="math inline">\(\sigma\)</span></td>
-<td>Tamaño de la muestra= <span class="math inline">\(n\)</span> Media de la muestra= <span class="math inline">\(\bar{x}\)</span> Varianza=<span class="math inline">\(S^2\)</span> Desviación de estandar= <span class="math inline">\(S\)</span></td>
+<td>Tamaño de la población= <span class="math inline">\(N\)</span> - Media de población= <span class="math inline">\(\mu\)</span> - Varianza=<span class="math inline">\(\sigma^2\)</span> Desviación de estándar= <span class="math inline">\(\sigma\)</span></td>
+<td>Tamaño de la muestra= <span class="math inline">\(n\)</span> - Media de la muestra= <span class="math inline">\(\bar{x}\)</span> - Varianza=<span class="math inline">\(S^2\)</span> - Desviación de estándar= <span class="math inline">\(S\)</span></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div id="bibliografía" class="section level1">
-<h1>Bibliografía</h1>
+<div id="bibliografía" class="section level4">
+<h4>Bibliografía</h4>
 <ol style="list-style-type: decimal">
 <li>Saldívar, S. M. (2008). Publicaciones ipn. Obtenido de <a href="http://www.publicaciones.ipn.mx" class="uri">http://www.publicaciones.ipn.mx</a></li>
 </ol>
+</div>
+</div>
 </div>
 
 

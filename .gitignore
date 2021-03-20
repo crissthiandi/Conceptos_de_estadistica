@@ -46,4 +46,5 @@ vignettes/*.pdf
 
 *.Rmd
 *.ini
+*.lnk
 rsconnect/
