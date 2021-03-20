@@ -282,6 +282,28 @@ div.tocify {
 p {
     font-size: 18px;
 }
+
+h1,h2,h3,h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container { width: 1000px; }
+h2 {
+  background-color: #D4DAEC;
+  padding: 5px;
+}
+
+h3 {
+  background-color: #D4DAEC;
+  text-indent: 100px; 
+}
+h4 {
+  text-decoration: underline;
+}
+
+g-table-intro h4 {
+  text-indent: 0px;
+}
 </style>
 <div id="variable-definiciones" class="section level2">
 <h2>Variable Definiciones</h2>
@@ -385,13 +407,49 @@ p {
 </tr>
 </tbody>
 </table>
-<div id="bibliografía" class="section level4">
-<h4>Bibliografía</h4>
+</div>
+</div>
+<div id="gráficos-estadísticos" class="section level2">
+<h2>Gráficos estadísticos</h2>
+<blockquote>
+<p><strong>Histograma</strong>: Es una gráfica de barras, que representa a un conjunto de datos, la cual esta compuesta por un titulo, que identifica la población de interés, una escala vertical que identifica las frecuencias en las distintas clases y, una escala horizontal que identifica a la variable <span class="math inline">\(x\)</span> (indicando las fronteras, límites o marca de clase).</p>
+</blockquote>
+</div>
+<div id="medidas-de-tendencia-central" class="section level2">
+<h2>Medidas de tendencia central</h2>
+<blockquote>
+<p><strong>Medidas de Dispersión o Variabilidad</strong>: Esta medida nos da una idea del grado de indeterminación que se afronta en una situación donde está presente el azar. En estos casos aun sabiendo que no se tiene la total certidumbre sobre un posible resultado de la estimación de los datos, las medidas de dispersión ofrecen menores posibilidades de un equívoco cuando la dispersión de una distribución es pequeña en medida.</p>
+</blockquote>
+<blockquote>
+<p><strong>Amplitud</strong>: Es la medida de dispersión más sencilla y es la diferencia entre el dato de mayor valor <span class="math inline">\(H\)</span> y el de menor valor <span class="math inline">\(L\)</span>. <span class="math inline">\(A=H-L\)</span>.</p>
+</blockquote>
+<blockquote>
+<p><strong>Varianza</strong>: Es la medida de separación con respecto a la medida y, su valor numérico se obtiene con la siguiente fórmula. <span class="math display">\[S^2=\sum \frac{(X-\bar{x})^2}{n-1}\]</span></p>
+</blockquote>
+<blockquote>
+<p><strong>Desviación Estándar</strong>: Es la medida de separación con respecto a la media y, su valor numérico es la raíz cuadrada positiva de la varianza. <span class="math display">\[S=\sqrt{(S^2)}\]</span> La desviación estándar es una medida de fluctuación (variabilidad) en los datos, se le ha definido como un valor que se calcula con fórmulas específicas. Pero, ¿cuál es su significado? Es una especie de “criterio de medición” mediante el cual puede compararse un conjunto de datos con otro. Esta medida particular puede ser comprendida mejor examinando dos enunciados; el Teorema de Chebyshev y la Regla Empírica.</p>
+</blockquote>
+<blockquote>
+<p><strong>Teorema de Chebyshev o Tchebycheff</strong>: La proporción de cualquier distribución situada dentro de <span class="math inline">\(k\)</span> desviaciones estándar de la media es, por lo menos, <span class="math inline">\(1-(1/k^2 )\)</span>; en donde <span class="math inline">\(k\)</span> es cualquier número positivo mayor que 1. Este teorema es aplicable a cualquier distribución de datos.</p>
+</blockquote>
+<pre class="r"><code>library(ggplot2)
+library(dplyr)
+base=iris %&gt;% filter(Species==&quot;setosa&quot;)
+ggplot(base,aes(x=Sepal.Length))+
+  geom_histogram(bins = 30)+
+  geom_vline(xintercept = c(mean(base$Sepal.Length)-sd(base$Sepal.Length),
+                            mean(base$Sepal.Length)+sd(base$Sepal.Length)),
+             color=&quot;#f5814c&quot;,linetype =2,size=2)+
+  geom_text(aes(x=c(mean(base$Sepal.Length)-sd(base$Sepal.Length),
+                            mean(base$Sepal.Length)+sd(base$Sepal.Length)),
+                label=c(&quot;hola&quot;,&quot;xd&quot;),y=c(0,0)
+                 ))</code></pre>
+</div>
+<div id="bibliografía" class="section level2">
+<h2>Bibliografía</h2>
 <ol style="list-style-type: decimal">
 <li>Saldívar, S. M. (2008). Publicaciones ipn. Obtenido de <a href="http://www.publicaciones.ipn.mx" class="uri">http://www.publicaciones.ipn.mx</a></li>
 </ol>
-</div>
-</div>
 </div>
 
 
