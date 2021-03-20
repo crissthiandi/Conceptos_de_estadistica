@@ -427,10 +427,23 @@ g-table-intro h4 {
 <p><strong>Varianza</strong>: Es la medida de separación con respecto a la medida y, su valor numérico se obtiene con la siguiente fórmula. <span class="math display">\[S^2=\sum \frac{(X-\bar{x})^2}{n-1}\]</span></p>
 </blockquote>
 <blockquote>
-<p><strong>Desviación Estándar</strong>: Es la medida de separación con respecto a la media y, su valor numérico es la raíz cuadrada positiva de la varianza. <span class="math inline">\(S=\sqrt{(S^2)}\)</span></p>
+<p><strong>Desviación Estándar</strong>: Es la medida de separación con respecto a la media y, su valor numérico es la raíz cuadrada positiva de la varianza. <span class="math display">\[S=\sqrt{(S^2)}\]</span> La desviación estándar es una medida de fluctuación (variabilidad) en los datos, se le ha definido como un valor que se calcula con fórmulas específicas. Pero, ¿cuál es su significado? Es una especie de “criterio de medición” mediante el cual puede compararse un conjunto de datos con otro. Esta medida particular puede ser comprendida mejor examinando dos enunciados; el Teorema de Chebyshev y la Regla Empírica.</p>
 </blockquote>
-<p>La desviación estándar es una medida de fluctuación (variabilidad) en los datos, se le ha definido como un valor que se calcula con fórmulas específicas. Pero, ¿cuál es su significado? Es una especie de “criterio de medición” mediante el cual puede compararse un conjunto de datos con otro. Esta medida particular puede ser comprendida mejor examinando dos enunciados; el Teorema de Chebyshev y la Regla Empírica.</p>
-<p>Teorema de Chebyshev o Tchebycheff. La proporción de cualquier distribución situada dentro de k desviaciones estándar de la media es, por lo menos, 1-(1/k2 ); en donde k es cualquier número positivo mayor que 1. Este teorema es aplicable a cualquier distribución de datos.</p>
+<blockquote>
+<p><strong>Teorema de Chebyshev o Tchebycheff</strong>: La proporción de cualquier distribución situada dentro de <span class="math inline">\(k\)</span> desviaciones estándar de la media es, por lo menos, <span class="math inline">\(1-(1/k^2 )\)</span>; en donde <span class="math inline">\(k\)</span> es cualquier número positivo mayor que 1. Este teorema es aplicable a cualquier distribución de datos.</p>
+</blockquote>
+<pre class="r"><code>library(ggplot2)
+library(dplyr)
+base=iris %&gt;% filter(Species==&quot;setosa&quot;)
+ggplot(base,aes(x=Sepal.Length))+
+  geom_histogram(bins = 30)+
+  geom_vline(xintercept = c(mean(base$Sepal.Length)-sd(base$Sepal.Length),
+                            mean(base$Sepal.Length)+sd(base$Sepal.Length)),
+             color=&quot;#f5814c&quot;,linetype =2,size=2)+
+  geom_text(aes(x=c(mean(base$Sepal.Length)-sd(base$Sepal.Length),
+                            mean(base$Sepal.Length)+sd(base$Sepal.Length)),
+                label=c(&quot;hola&quot;,&quot;xd&quot;),y=c(0,0)
+                 ))</code></pre>
 </div>
 <div id="bibliografía" class="section level2">
 <h2>Bibliografía</h2>
